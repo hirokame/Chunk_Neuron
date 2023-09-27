@@ -1,0 +1,29 @@
+function NosePokeDrinkAnalysis
+
+cd('C:\Users\B133_2\Desktop\NosePokeData');
+
+FileName='201_180119'
+
+eval(['load ',FileName,'.mat -ascii']);
+eval(['data=X',FileName]);
+
+StartTime=data(1,2);
+StopTime=data(1,3);
+
+NosePokeTime=data(:,7);
+NosePokeTime(NosePokeTime==0)=[];
+
+DrinkTime=data(:,15);
+DrinkTime(DrinkTime==0)=[];
+
+% DrinkTime2=data(:,14);
+% DrinkTime2(DrinkTime2==0)=[];
+
+TaskDuration=StopTime-StartTime;
+NosePokeTime=NosePokeTime-StartTime;
+DrinkTime=DrinkTime-StartTime;
+
+for n=1:length(Nose
+Delay=
+
+data(end,:)
